@@ -1,0 +1,30 @@
+
+'exercise 3'
+
+SELECT  funcionarios.PrimeiroNome, funcionarios.UltimoNome, funcionarios.Funcao, departamento.nome
+FROM funcionarios JOIN departamentos
+ON funcionarios.CodigoDepartamento = departamentos.Codigo
+WHERE Funcao = 'gerente'
+ORDER BY nome;
+
+
+'exercise 4'
+
+SELECT departamento.Nome, funcionarios.Salario
+FROM funcionarios JOIN departamentos
+ON funcionarios.CodigoDepartamento = departamentos.Codigo
+ORDER BY Nome;
+
+
+'exercise 5'
+
+Para este exercício utilizarei Python. Esse exercício foi um dos primeiros que eu fiz no curso de Python:
+
+
+sentence = 'Cats live happier than us'
+
+print('occurrence of letter a:', sentence.count('a'))
+
+Sendo que o resultado apresentado é: 
+
+occurrence of letter a: 3
